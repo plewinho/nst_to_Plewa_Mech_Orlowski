@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.*?>
+<AnchorPane fx:id="rootPane" prefHeight="745.0" prefWidth="1263.0" style="-fx-background-color: #080807;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.main.casinoapp.SlotsGameController">
+   <children>
+      <Pane layoutX="226.0" layoutY="-1.0" prefHeight="131.0" prefWidth="1037.0" style="-fx-background-radius: 15 0 15 0;" styleClass="linear-grad2" stylesheets="@fullpackstyling.css" />
+      <Pane layoutX="26.0" layoutY="46.0" prefHeight="680.0" prefWidth="1169.0" style="-fx-background-radius: 15;" styleClass="linear-grad" stylesheets="@fullpackstyling.css">
+         <children>
+            <Label layoutX="452.0" layoutY="14.0" style="-fx-text-fill: White;" text="DKD Casino">
+               <font>
+                  <Font name="System Bold" size="48.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0" startY="1.0">
+                     <stops>
+                        <Stop color="#da1111" />
+                        <Stop color="#da1111" offset="0.007246376811594203" />
+                        <Stop color="#d9a314" offset="0.5098749644785451" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Pane layoutX="116.0" layoutY="109.0" prefHeight="343.0" prefWidth="936.0" style="-fx-background-radius: 15;" styleClass="pane-grid" stylesheets="@fullpackstyling.css">
+               <children>
+                  <Label fx:id="lbl1" alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="22.0" prefHeight="300.0" prefWidth="300.0" style="-fx-background-radius: 20; -fx-text-fill: #bfbdbd;" styleClass="linear-grad3" stylesheets="@fullpackstyling.css" text="7">
+                     <font>
+                        <Font name="System Bold" size="96.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbl2" alignment="CENTER" contentDisplay="CENTER" layoutX="318.0" layoutY="22.0" prefHeight="300.0" prefWidth="300.0" style="-fx-background-radius: 20; -fx-text-fill: #bfbdbd;" styleClass="linear-grad3" stylesheets="@fullpackstyling.css" text="7">
+                     <font>
+                        <Font name="System Bold" size="96.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbl3" alignment="CENTER" contentDisplay="CENTER" layoutX="622.0" layoutY="22.0" prefHeight="300.0" prefWidth="300.0" style="-fx-background-radius: 20; -fx-text-fill: #bfbdbd;" styleClass="linear-grad3" stylesheets="@fullpackstyling.css" text="7">
+                     <font>
+                        <Font name="System Bold" size="96.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Button fx:id="btnSpin" layoutX="856.0" layoutY="481.0" mnemonicParsing="false" onAction="#handleSpinEvent" prefHeight="51.0" prefWidth="192.0" style="-fx-text-fill: #fff; -fx-background-radius: 15;" styleClass="button4" text="SPIN">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Label layoutX="116.0" layoutY="481.0" prefWidth="144.0" style="-fx-text-fill: #fff;" text="Balance:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tfAmount" layoutX="624.0" layoutY="482.0" prefHeight="51.0" prefWidth="226.0" promptText="Amount" style="-fx-background-color: #1A1A1A; -fx-pref-height: 50; -fx-background-radius: 10; -fx-border-width: 0;">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <Label fx:id="lblBal" layoutX="268.0" layoutY="481.0" style="-fx-text-fill: #fff;" text="0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <HBox layoutX="14.0" layoutY="14.0" prefHeight="28.0" prefWidth="113.0">
+         <children>
+            <Circle fx:id="btnClose" fill="RED" onMouseClicked="#handleMouseEvent" radius="14.0" stroke="BLACK" strokeType="INSIDE" />
+            <ImageView fitHeight="28.0" fitWidth="15.0" layoutX="66.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+            <Circle fill="#ffb700" layoutX="24.0" layoutY="24.0" radius="14.0" stroke="BLACK" strokeType="INSIDE" />
+            <ImageView fitHeight="28.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true" />
+            <Circle fill="#00ff22" layoutX="52.0" layoutY="24.0" radius="14.0" stroke="BLACK" strokeType="INSIDE" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

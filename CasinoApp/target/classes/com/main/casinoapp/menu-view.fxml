@@ -1,0 +1,770 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="rootPane" prefHeight="745.0" prefWidth="1263.0" style="-fx-background-color: #080807;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.main.casinoapp.MenuPanelController">
+   <children>
+      <Pane layoutX="853.0" prefHeight="125.0" prefWidth="410.0" style="-fx-background-radius: 10 0 10;" styleClass="linear-grad2" stylesheets="@fullpackstyling.css" AnchorPane.bottomAnchor="620.0" AnchorPane.leftAnchor="853.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="90.0" layoutY="35.0" style="-fx-text-fill: #ffffff;" text="Let the game begin!" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="24.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <Button fx:id="btnMain" contentDisplay="TOP" layoutX="108.0" layoutY="3.0" mnemonicParsing="false" onAction="#handleButtonEvent" prefHeight="100.0" prefWidth="105.0" styleClass="button3" stylesheets="@fullpackstyling.css" textFill="#cdb60d">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="85.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../com.main.icons/Logo%20Casino.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <VBox prefHeight="745.0" prefWidth="90.0" style="-fx-background-color: #171616;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="11.0" fitWidth="94.0" pickOnBounds="true" preserveRatio="true" />
+            <HBox prefHeight="23.0" prefWidth="94.0">
+               <children>
+                  <ImageView fitHeight="25.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true" />
+                  <Circle fx:id="btnClose" fill="RED" onMouseClicked="#handleMouseEvent" radius="13.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" />
+               </children>
+            </HBox>
+            <ImageView fitHeight="100.0" fitWidth="91.0" pickOnBounds="true" preserveRatio="true" />
+            <Button fx:id="btnProfile" contentDisplay="TOP" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#handleButtonEvent" prefHeight="80.0" prefWidth="90.0" styleClass="button2" stylesheets="@fullpackstyling.css" text="Profile" textFill="#cdb60d">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../com.main.icons/icons8-male-user-50.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnGames" contentDisplay="TOP" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#handleButtonEvent" prefHeight="80.0" prefWidth="90.0" styleClass="button2" stylesheets="@fullpackstyling.css" text="Games" textFill="#cdb60d">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../com.main.icons/icons8-games-50.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnHistory" contentDisplay="TOP" layoutX="10.0" layoutY="87.0" mnemonicParsing="false" onAction="#handleButtonEvent" prefHeight="77.0" prefWidth="91.0" styleClass="button2" stylesheets="@fullpackstyling.css" text="Balance" textFill="#cdb60d">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../com.main.icons/icons8-money-50.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnCredits" contentDisplay="TOP" layoutX="10.0" layoutY="164.0" mnemonicParsing="false" onAction="#handleButtonEvent" prefHeight="80.0" prefWidth="90.0" styleClass="button2" stylesheets="@fullpackstyling.css" text="Credits" textFill="#cdb60d">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../com.main.icons/icons8-staff-50.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </VBox>
+      <Label layoutX="213.0" layoutY="30.0" text="DKD Casino">
+         <font>
+            <Font name="Broadway" size="36.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" startY="1.0">
+               <stops>
+                  <Stop color="#da1111" />
+                  <Stop color="#da1111" offset="0.007246376811594203" />
+                  <Stop color="#d9a314" offset="0.5098749644785451" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <AnchorPane fx:id="apGames" layoutX="103.0" layoutY="95.0" prefHeight="636.0" prefWidth="1146.0" style="-fx-background-color: #171616; -fx-background-radius: 15;">
+         <children>
+            <Line endX="100.0" layoutX="650.0" layoutY="91.0" startX="100.0" startY="500.0" stroke="#dab009" strokeDashOffset="2.0" />
+            <Pane layoutX="784.0" layoutY="68.0" prefHeight="348.0" prefWidth="325.0" style="-fx-background-radius: 15;" styleClass="linear-grad2" stylesheets="@fullpackstyling.css">
+               <children>
+                  <ImageView fitHeight="180.0" fitWidth="203.0" layoutX="73.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../com.main.icons/icons8-profile-pic-100.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="67.0" layoutY="220.0" style="-fx-text-fill: #ffffff;" text="Welcome" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="57.0" layoutY="260.0" style="-fx-text-fill: #ffffff;" text="Balance:">
+                     <font>
+                        <Font name="System Bold" size="32.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblNickname2" layoutX="180.0" layoutY="220.0" style="-fx-text-fill: #ffffff;" text="test" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblBal2" layoutX="189.0" layoutY="260.0" style="-fx-text-fill: #ffffff;" text="0" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="32.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Button fx:id="btnPlay2" layoutX="889.0" layoutY="397.0" mnemonicParsing="false" onAction="#handleButtonEvent" prefHeight="40.0" prefWidth="116.0" stylesheets="@fullpackstyling.css" text="PLAY" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Label layoutX="850.0" layoutY="464.0" text="Best Casino" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="850.0" layoutY="517.0" text="Application" textFill="#cdb60d">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="291.0" layoutY="33.0" text="SLOTS">
+               <font>
+                  <Font name="System Bold" size="48.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#d75911" />
+                        <Stop color="#c3c60e" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label layoutX="30.0" layoutY="135.0" style="-fx-text-fill: #a4a5a6;" text="GAME RULES:">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="30.0" layoutY="196.0" style="-fx-text-fill: #a4a5a6;" text="It's easy. Bet a given amount of money and you will be able to spin the machine.">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="30.0" layoutY="242.0" style="-fx-text-fill: #a4a5a6;" text="If you hit">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="115.0" layoutY="242.0" text="two 7s" textFill="#f2b00a">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="180.0" layoutY="242.0" style="-fx-text-fill: #a4a5a6;" text="your bet will be miltiplied">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="413.0" layoutY="242.0" text="by 2." textFill="#f2b00a">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="30.0" layoutY="288.0" style="-fx-text-fill: #a4a5a6;" text="If you match">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="144.0" layoutY="288.0" text="3 of the same numbers" textFill="#f2b00a">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="348.0" layoutY="288.0" style="-fx-text-fill: #a4a5a6;" text=", your bet will be multiplied">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="596.0" layoutY="288.0" text="by 3." textFill="#f2b00a">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="30.0" layoutY="334.0" style="-fx-text-fill: #a4a5a6;" text="If you hit">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="117.0" layoutY="334.0" text="three 7s" textFill="#f2b00a">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="195.0" layoutY="334.0" style="-fx-text-fill: #a4a5a6;" text="your bet will be miltiplied">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="426.0" layoutY="334.0" text="by 4." textFill="#f2b00a">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="156.0" layoutY="509.0" opacity="0.2" style="-fx-text-fill: #fff;" text="MORE GAMES WILL BE ADDED SOON!!">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="30.0" layoutY="382.0" style="-fx-text-fill: #a4a5a6;" text="Missing">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="105.0" layoutY="382.0" text="any" textFill="#f2b00a">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="142.0" layoutY="382.0" style="-fx-text-fill: #a4a5a6;" text="winnings will result in">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="335.0" layoutY="382.0" text="your bet money" textFill="#f2b00a">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="482.0" layoutY="382.0" style="-fx-text-fill: #a4a5a6;" text="being lost!">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="apCredits" layoutX="103.0" layoutY="95.0" prefHeight="636.0" prefWidth="1146.0" style="-fx-background-color: #171616; -fx-background-radius: 15;">
+         <children>
+            <Line endX="100.0" layoutX="650.0" layoutY="91.0" startX="100.0" startY="500.0" stroke="#dab009" strokeDashOffset="2.0" />
+            <Pane layoutX="784.0" layoutY="68.0" prefHeight="348.0" prefWidth="325.0" style="-fx-background-radius: 15;" styleClass="linear-grad2" stylesheets="@fullpackstyling.css">
+               <children>
+                  <ImageView fitHeight="180.0" fitWidth="203.0" layoutX="73.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../com.main.icons/icons8-profile-pic-100.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="67.0" layoutY="220.0" style="-fx-text-fill: #ffffff;" text="Welcome" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="57.0" layoutY="260.0" style="-fx-text-fill: #ffffff;" text="Balance:">
+                     <font>
+                        <Font name="System Bold" size="32.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblNickname3" layoutX="180.0" layoutY="220.0" style="-fx-text-fill: #ffffff;" text="test" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblBal3" layoutX="189.0" layoutY="260.0" style="-fx-text-fill: #ffffff;" text="0" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="32.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Button fx:id="btnPlay3" layoutX="889.0" layoutY="397.0" mnemonicParsing="false" onAction="#handleButtonEvent" prefHeight="40.0" prefWidth="116.0" stylesheets="@fullpackstyling.css" text="PLAY" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Label layoutX="850.0" layoutY="464.0" text="Best Casino" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="850.0" layoutY="517.0" text="Application" textFill="#cdb60d">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="257.0" layoutY="55.0" style="-fx-text-fill: #cdb60d;" text="CREDITS">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="60.0" />
+               </font>
+            </Label>
+            <Label layoutX="79.0" layoutY="153.0" style="-fx-text-fill: #b8b8b8;" text="The application was created by a team of students:">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Label>
+            <Label layoutX="79.0" layoutY="242.0" text="Orłowski Dawid">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#ab0c0c" />
+                        <Stop color="#eb700b" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label layoutX="79.0" layoutY="301.0" text="Plewa Dawid">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#ab0c0c" />
+                        <Stop color="#eb700b" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label layoutX="79.0" layoutY="362.0" text="Mech Konrad">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#ab0c0c" />
+                        <Stop color="#eb700b" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label layoutX="257.0" layoutY="242.0" style="-fx-text-fill: #b8b8b8;" text="- Main Project Manager">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="227.0" layoutY="301.0" style="-fx-text-fill: #b8b8b8;" text="- Main Project Manager">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="237.0" layoutY="362.0" style="-fx-text-fill: #b8b8b8;" text="- Main Project Manager">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="246.0" layoutY="507.0" opacity="0.2" style="-fx-text-fill: #b8b8b8;" text="© 2024, DKD Casino, Inc. All rights reserved." />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="apProfile" layoutX="103.0" layoutY="95.0" prefHeight="636.0" prefWidth="1146.0" style="-fx-background-color: #171616; -fx-background-radius: 15;">
+         <children>
+            <Line endX="100.0" layoutX="650.0" layoutY="91.0" startX="100.0" startY="500.0" stroke="#dab009" strokeDashOffset="2.0" />
+            <Pane layoutX="784.0" layoutY="68.0" prefHeight="348.0" prefWidth="325.0" style="-fx-background-radius: 15;" styleClass="linear-grad2" stylesheets="@fullpackstyling.css">
+               <children>
+                  <ImageView fitHeight="180.0" fitWidth="203.0" layoutX="73.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../com.main.icons/icons8-profile-pic-100.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="67.0" layoutY="220.0" style="-fx-text-fill: #ffffff;" text="Welcome" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="57.0" layoutY="260.0" style="-fx-text-fill: #ffffff;" text="Balance:">
+                     <font>
+                        <Font name="System Bold" size="32.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblNickname4" layoutX="180.0" layoutY="220.0" style="-fx-text-fill: #ffffff;" text="test" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblBal4" layoutX="189.0" layoutY="260.0" style="-fx-text-fill: #ffffff;" text="0" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="32.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Button fx:id="btnPlay4" layoutX="889.0" layoutY="397.0" mnemonicParsing="false" onAction="#handleButtonEvent" prefHeight="40.0" prefWidth="116.0" stylesheets="@fullpackstyling.css" text="PLAY" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Label layoutX="850.0" layoutY="464.0" text="Best Casino" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="850.0" layoutY="517.0" text="Application" textFill="#cdb60d">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="51.0" layoutY="52.0" style="-fx-text-fill: #b8b8b8;" text="USER NAME">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="28.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblUsername" layoutX="51.0" layoutY="91.0" style="-fx-text-fill: #a3a2a2;" text="nick">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Line endX="600.0" endY="40.0" layoutY="101.0" startX="51.0" startY="40.0" stroke="#b8b8b8" strokeDashOffset="2.0" />
+            <Line endX="600.0" endY="40.0" layoutY="201.0" startX="51.0" startY="40.0" stroke="#b8b8b8" strokeDashOffset="2.0" />
+            <Label fx:id="lblEmail" layoutX="51.0" layoutY="191.0" style="-fx-text-fill: #a3a2a2;" text="email">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="51.0" layoutY="152.0" style="-fx-text-fill: #b8b8b8;" text="E-MAIL">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="28.0" />
+               </font>
+            </Label>
+            <Label layoutX="51.0" layoutY="251.0" style="-fx-text-fill: #b8b8b8;" text="PASSWORD">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="28.0" />
+               </font>
+            </Label>
+            <Line endX="600.0" endY="40.0" layoutY="300.0" startX="51.0" startY="40.0" stroke="#b8b8b8" strokeDashOffset="2.0" />
+            <Label layoutX="51.0" layoutY="290.0" style="-fx-text-fill: #a3a2a2;" text="•••••••••••••••••">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="51.0" layoutY="352.0" style="-fx-text-fill: #b8b8b8;" text="AGE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="28.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblAge" layoutX="51.0" layoutY="391.0" style="-fx-text-fill: #a3a2a2;" text="age">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Line endX="600.0" endY="40.0" layoutY="401.0" startX="51.0" startY="40.0" stroke="#b8b8b8" strokeDashOffset="2.0" />
+            <Label layoutX="51.0" layoutY="453.0" style="-fx-text-fill: #b8b8b8;" text="BALANCE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="28.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblProfBalance" layoutX="51.0" layoutY="492.0" style="-fx-text-fill: #a3a2a2;" text="balance">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Line endX="600.0" endY="40.0" layoutY="502.0" startX="51.0" startY="40.0" stroke="#b8b8b8" strokeDashOffset="2.0" />
+            <Button fx:id="btnChangePassword" layoutX="548.0" layoutY="286.0" mnemonicParsing="false" style="-fx-background-color: #171616;" stylesheets="@fullpackstyling.css" />
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="658.0" layoutY="517.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../com.main.icons/icons8-edit-50.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="apMain" layoutX="103.0" layoutY="95.0" prefHeight="636.0" prefWidth="1146.0" style="-fx-background-color: #171616; -fx-background-radius: 15;">
+         <children>
+            <Label layoutX="34.0" layoutY="44.0" prefHeight="47.0" prefWidth="230.0" text="Welcome to the" textFill="WHITE">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="264.0" layoutY="44.0" prefHeight="47.0" prefWidth="180.0" text="DKD Casino" textFill="#cdb60d">
+               <font>
+                  <Font name="System Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="29.0" layoutY="103.0" prefHeight="32.0" prefWidth="684.0" text="Step into a world of excitement and entertainment with our cutting-edge casino app. " textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="29.0" layoutY="135.0" text="Whether you're a seasoned pro or a casual player, we've got everything you need &#10;for an unforgettable gaming adventure." textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="29.0" layoutY="189.0" text="Get ready to elevate your thrill and experience the best in online casino gaming." textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Pane layoutX="29.0" layoutY="280.0" prefHeight="77.0" prefWidth="627.0" style="-fx-background-color: #303030; -fx-background-radius: 15;">
+               <children>
+                  <Label layoutX="14.0" layoutY="2.0" prefHeight="25.0" prefWidth="188.0" text="Bankroll Management is" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="202.0" layoutY="2.0" text="Key" textFill="#cdb60d">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="28.0" prefHeight="47.0" prefWidth="600.0" text="Begin your casino journey with a predetermined budget.&#10;Set limits for losses and winnings, ensuring you stay in control and enjoy the experience." textFill="#aba8a8" />
+               </children></Pane>
+            <Pane layoutX="29.0" layoutY="378.0" prefHeight="77.0" prefWidth="627.0" style="-fx-background-color: #303030; -fx-background-radius: 15;">
+               <children>
+                  <Label layoutX="14.0" layoutY="4.0" text="Know the" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="92.0" layoutY="4.0" text="Games" textFill="#cdb60d">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="29.0" prefHeight="47.0" prefWidth="600.0" text="Before diving in, understand the rules and strategies&#10;of the games you're interested in. Knowledge enhances your chances of success." textFill="#aba8a8" />
+               </children></Pane>
+            <Pane layoutX="29.0" layoutY="478.0" prefHeight="77.0" prefWidth="627.0" style="-fx-background-color: #303030; -fx-background-radius: 15;">
+               <children>
+                  <Label layoutX="15.0" layoutY="6.0" text="Time Management" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="31.0" prefHeight="47.0" prefWidth="600.0" text="Set time limits for your gambling sessions. Knowing when to step away can prevent&#10;impulsive decisions during both winning and losing streaks." textFill="#aba8a8" />
+               </children></Pane>
+            <Line endX="100.0" layoutX="650.0" layoutY="91.0" startX="100.0" startY="500.0" stroke="#dab009" strokeDashOffset="2.0" />
+            <Pane layoutX="784.0" layoutY="68.0" prefHeight="348.0" prefWidth="325.0" style="-fx-background-radius: 15;" styleClass="linear-grad2" stylesheets="@fullpackstyling.css">
+               <children>
+                  <ImageView fitHeight="180.0" fitWidth="203.0" layoutX="73.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../com.main.icons/icons8-profile-pic-100.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="67.0" layoutY="220.0" style="-fx-text-fill: #ffffff;" text="Welcome" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="57.0" layoutY="260.0" style="-fx-text-fill: #ffffff;" text="Balance:">
+                     <font>
+                        <Font name="System Bold" size="32.0" />
+                     </font></Label>
+                  <Label fx:id="lblNickname" layoutX="180.0" layoutY="220.0" style="-fx-text-fill: #ffffff;" text="test" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblBal" layoutX="189.0" layoutY="260.0" style="-fx-text-fill: #ffffff;" text="0" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="32.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Button fx:id="btnPlay1" layoutX="889.0" layoutY="397.0" mnemonicParsing="false" onAction="#handleButtonEvent" prefHeight="40.0" prefWidth="116.0" stylesheets="@fullpackstyling.css" text="PLAY" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Label layoutX="850.0" layoutY="464.0" text="Best Casino" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="850.0" layoutY="517.0" text="Application" textFill="#cdb60d">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <AnchorPane fx:id="apHistory" layoutX="103.0" layoutY="95.0" prefHeight="636.0" prefWidth="1146.0" style="-fx-background-color: #171616; -fx-background-radius: 15;">
+         <children>
+            <Line endX="100.0" layoutX="650.0" layoutY="91.0" startX="100.0" startY="500.0" stroke="#dab009" strokeDashOffset="2.0" />
+            <Pane layoutX="784.0" layoutY="68.0" prefHeight="348.0" prefWidth="325.0" style="-fx-background-radius: 15;" styleClass="linear-grad2" stylesheets="@fullpackstyling.css">
+               <children>
+                  <ImageView fitHeight="180.0" fitWidth="203.0" layoutX="73.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../com.main.icons/icons8-profile-pic-100.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="67.0" layoutY="220.0" style="-fx-text-fill: #ffffff;" text="Welcome" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="57.0" layoutY="260.0" style="-fx-text-fill: #ffffff;" text="Balance:">
+                     <font>
+                        <Font name="System Bold" size="32.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblNickname5" layoutX="180.0" layoutY="220.0" style="-fx-text-fill: #ffffff;" text="test" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblBal5" layoutX="189.0" layoutY="260.0" style="-fx-text-fill: #ffffff;" text="0" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="32.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Button fx:id="btnPlay5" layoutX="889.0" layoutY="397.0" mnemonicParsing="false" onAction="#handleButtonEvent" prefHeight="40.0" prefWidth="116.0" stylesheets="@fullpackstyling.css" text="PLAY" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Label layoutX="850.0" layoutY="464.0" text="Best Casino" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="850.0" layoutY="517.0" text="Application" textFill="#cdb60d">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+            <Pane layoutX="33.0" layoutY="42.0" prefHeight="100.0" prefWidth="684.0" style="-fx-background-color: #474747; -fx-background-radius: 50;">
+               <children>
+                  <Label layoutX="135.0" layoutY="14.0" style="-fx-text-fill: #fff;" text="Remember to use your">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="401.0" layoutY="14.0" style="-fx-text-fill: #cdb60d;" text="funds">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="474.0" layoutY="14.0" style="-fx-text-fill: #fff;" text="wisely.">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="162.0" layoutY="49.0" style="-fx-text-fill: #cdb60d;" text="Gambling">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="278.0" layoutY="49.0" style="-fx-text-fill: #fff;" text="can lead to addiction!">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="44.0" layoutY="170.0" prefHeight="387.0" prefWidth="663.0" style="-fx-background-color: #474747; -fx-background-radius: 20;">
+               <children>
+                  <Label layoutX="209.0" layoutY="14.0" style="-fx-text-fill: #a19f9f;" text="Select payment method">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <CheckBox alignment="CENTER" layoutX="14.0" layoutY="60.0" mnemonicParsing="false">
+                     <graphic>
+                        <Label style="-fx-background-color: #171616; -fx-text-fill: #a19f9f; -fx-background-radius: 5; -fx-label-padding: 3 5 3 5;" text="CARD">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="20.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="40.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../com.main.icons/icons8-credit-card-48.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Label>
+                     </graphic>
+                  </CheckBox>
+                  <CheckBox layoutX="161.0" layoutY="60.0" mnemonicParsing="false">
+                     <graphic>
+                        <Label style="-fx-background-color: #171616; -fx-text-fill: #a19f9f; -fx-background-radius: 5; -fx-label-padding: 3 5 3 5;" text="BANK">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="20.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="40.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../com.main.icons/icons8-transfer-48.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Label>
+                     </graphic>
+                  </CheckBox>
+                  <CheckBox layoutX="309.0" layoutY="60.0" mnemonicParsing="false">
+                     <graphic>
+                        <Label style="-fx-background-color: #171616; -fx-text-fill: #a19f9f; -fx-background-radius: 5; -fx-label-padding: 3 5 3 5;" text="PAYPAL">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="20.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="40.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../com.main.icons/icons8-paypal-48.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Label>
+                     </graphic>
+                  </CheckBox>
+                  <CheckBox layoutX="483.0" layoutY="60.0" mnemonicParsing="false">
+                     <graphic>
+                        <Label style="-fx-background-color: #171616; -fx-text-fill: #a19f9f; -fx-background-radius: 5; -fx-label-padding: 3 5 3 5;" text="CRYPTO">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="20.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="40.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../com.main.icons/icons8-bitcoin-48.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Label>
+                     </graphic>
+                  </CheckBox>
+                  <Label layoutX="135.0" layoutY="142.0" style="-fx-text-fill: #a19f9f;" text="Enter the amount you want to deposit">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="tfDeposit" layoutX="116.0" layoutY="194.0" prefHeight="54.0" prefWidth="431.0" promptText="Amount" style="-fx-background-color: #171616; -fx-background-radius: 20;">
+                     <font>
+                        <Font size="18.0" />
+                     </font></TextField>
+                  <Button fx:id="btnConfirm" layoutX="455.0" layoutY="299.0" mnemonicParsing="false" onAction="#handleButtonEvent" prefHeight="50.0" prefWidth="180.0" styleClass="button5" stylesheets="@fullpackstyling.css" text="CONFIRM PURCHASE" textFill="#4d4d4d" />
+                  <Label fx:id="lblLogout" layoutX="49.0" layoutY="297.0" prefHeight="47.0" prefWidth="376.0" style="-fx-text-fill: #fff;" text="test">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

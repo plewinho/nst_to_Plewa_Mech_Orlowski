@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.*?>
+<AnchorPane id="AnchorPane" fx:id="rootPane" prefHeight="680.0" prefWidth="1143.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.main.casinoapp.LoginPanelController">
+    <children>
+        <BorderPane prefHeight="680.0" prefWidth="1143.0" style="-fx-background-color: #fff;">
+            <left>
+                <Pane prefHeight="680.0" prefWidth="509.0" styleClass="linear-grad" stylesheets="@fullpackstyling.css" BorderPane.alignment="CENTER">
+                    <children>
+                        <HBox layoutX="14.0" layoutY="14.0" spacing="10.0">
+                            <children>
+                                <Circle fx:id="btnClose" fill="#d32019" onMouseClicked="#handleMouseEvent" radius="10.0" stroke="WHITE" strokeType="INSIDE" />
+                                <Circle fill="#f89215" layoutX="25.0" layoutY="25.0" radius="10.0" stroke="WHITE" strokeType="INSIDE" />
+                                <Circle fill="#26da2c" layoutX="25.0" layoutY="25.0" radius="10.0" stroke="WHITE" strokeType="INSIDE" />
+                            </children>
+                        </HBox>
+                        <ImageView fitHeight="624.0" fitWidth="641.0" layoutX="-57.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../com.main.icons/Logo%20Casino.png" />
+                            </image>
+                        </ImageView>
+                  <Label layoutX="109.0" layoutY="561.0" opacity="0.4" text="© 2024, DKD Casino, Inc. All rights reserved." />
+                    </children>
+                </Pane>
+            </left>
+            <center>
+                <StackPane fx:id="pnlStack" prefHeight="680.0" prefWidth="726.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <Pane fx:id="pnlSignUp" style="-fx-background-color: #d7d9e0;">
+                            <children>
+                                <TextField fx:id="tfEmailReg" layoutX="125.0" layoutY="116.0" prefHeight="59.0" prefWidth="384.0" promptText="Email" />
+                                <Button fx:id="btnRegister" layoutX="381.0" layoutY="552.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="128.0" stylesheets="@fullpackstyling.css" text="Get Started" textFill="WHITE">
+                                    <font>
+                                        <Font size="16.0" />
+                                    </font>
+                                </Button>
+                                <Label fx:id="lbForgot11" layoutX="125.0" layoutY="30.0" prefHeight="53.0" prefWidth="133.0" text="Sign Up">
+                                    <font>
+                                        <Font name="System Bold" size="36.0" />
+                                    </font>
+                                </Label>
+                                <ImageView fx:id="btnBack" fitHeight="60.0" fitWidth="70.0" layoutX="27.0" layoutY="26.0" onMouseClicked="#handleMouseEvent" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../com.main.icons/back.png" />
+                                    </image>
+                                </ImageView>
+                        <PasswordField fx:id="tfPassReg" layoutX="125.0" layoutY="201.0" prefHeight="59.0" prefWidth="384.0" promptText="Password" />
+                        <TextField fx:id="tfNickname" layoutX="125.0" layoutY="291.0" prefHeight="59.0" prefWidth="384.0" promptText="Nickname" />
+                        <TextField fx:id="tfAge" layoutX="125.0" layoutY="377.0" prefHeight="59.0" prefWidth="384.0" promptText="Age" />
+                        <TextField fx:id="tfBalance" layoutX="125.0" layoutY="464.0" prefHeight="59.0" prefWidth="384.0" promptText="Deposit Amount" />
+                            </children>
+                        </Pane>
+                        <Pane fx:id="pnlSignIn" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #d7d9e0;">
+                            <children>
+                                <TextField fx:id="tfEmail" layoutX="125.0" layoutY="184.0" prefHeight="59.0" prefWidth="384.0" promptText="Email" />
+                                <PasswordField fx:id="tfPass" layoutX="125.0" layoutY="269.0" prefHeight="59.0" prefWidth="384.0" promptText="Password" />
+                                <Button fx:id="btnSignIn" layoutX="381.0" layoutY="386.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="128.0" stylesheets="@fullpackstyling.css" text="Sign In" textFill="WHITE">
+                                    <font>
+                                        <Font size="16.0" />
+                                    </font>
+                                </Button>
+                                <Button fx:id="btnSignUp" layoutX="123.0" layoutY="559.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="389.0" stylesheets="@fullpackstyling.css" text="Don't have an account? Sign Up!" textFill="WHITE">
+                                    <font>
+                                        <Font size="16.0" />
+                                    </font>
+                                </Button>
+                                <Label fx:id="lbForgot" layoutX="125.0" layoutY="392.0" opacity="0.5" prefHeight="33.0" prefWidth="150.0" text="Forgot password?">
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                </Label>
+                                <Label fx:id="lbSignIn" layoutX="125.0" layoutY="97.0" prefHeight="33.0" prefWidth="124.0" text="Sign In">
+                                    <font>
+                                        <Font name="System Bold" size="36.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </Pane>
+                    </children>
+                </StackPane>
+            </center>
+        </BorderPane>
+    </children>
+</AnchorPane>
